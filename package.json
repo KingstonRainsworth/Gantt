@@ -35,8 +35,13 @@
   },
   "dependencies": {
     "history": "^4.7.2",
+    "node-sass": "^4.11.0",
+    "nuka-carousel": "^4.4.6",
     "react": "^16.7.0",
     "react-dom": "^16.7.0",
-    "react-router-dom": "^4.3.1"
+    "react-router-dom": "^4.3.1",
+    "react-scroll-up-button": "^1.6.4",
+    "sass-loader": "^7.1.0",
+    "semantic-ui-react": "^0.84.0"
   }
 }

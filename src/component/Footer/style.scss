@@ -1,0 +1,74 @@
+$primary-color : #0065af;
+footer {
+    background-color: #000;
+    padding-top: 50px;
+    .noneUlStyle {
+      color: white;
+      padding: 0;
+      list-style-type: none;
+      li {
+        margin: 2em 0 2em 0;
+        h3 {
+          color: $primary-color  !important;
+        }
+      }
+    }
+    .listNews {
+      color: white;
+      padding: 0;
+      :nth-child(1) {
+        list-style-type: none;
+      } 
+      li {
+        margin: 1em 0 1em 0;
+        padding: 0 0 1em 0;
+        border-bottom: 1px solid grey;
+        h3 {
+          color: $primary-color  !important;
+        }
+      }
+    }
+  
+    .searchInput {
+      width: 90% !important;
+      height: 2.5em !important;
+      background-color: #292929 !important;
+      color: white !important;
+      padding: 1em;
+      border-color: #292929 !important; 
+    }
+  
+    
+  }
+  
+  .copyright {
+    background-color: $primary-color;
+    padding-top: 15px;
+    padding-bottom: 15px;
+    h4 {
+      color: #fff;
+    }
+  }
+  
+  .button-scroll-to-top {
+    position: fixed;
+    bottom: 10px;
+    right: 10px;
+    background: url(http://coreasiapm.com/wp-content/themes/xaydung/images/arrow_to_top.png) no-repeat #000 center;
+    z-index: 999;
+    width: 42px;
+    height: 40px;
+    -webkit-border-radius: 2px;
+    -moz-border-radius: 2px;
+    border-radius: 2px;
+  }
+
+  @media only screen and (max-width: 760px) {
+    .noneUlStyle {
+      padding: 1em !important;
+   }
+   .listNews{
+      padding: 1em !important;
+   }
+  
+  }
