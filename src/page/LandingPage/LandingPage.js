@@ -6,11 +6,16 @@ import {
 } from "semantic-ui-react";
 //Carousel
 import Carousel from "nuka-carousel";
+import { Helmet } from "react-helmet";
 import './style.scss';
 
 const LandingPage = (props) => {
   return (
     <Fragment>
+      <Helmet>
+        <meta charSet="utf-8" />
+        <title>Đồng nhân Project</title>
+      </Helmet>
       <section id="slides">
         <Carousel swiping={true} autoplay={true} renderCenterLeftControls={({ previousSlide }) => (
           <i className="fas fa-chevron-left" onClick={previousSlide} style={{ fontSize: '4vw' }} />
@@ -110,10 +115,10 @@ const LandingPage = (props) => {
                   <span>Về chúng tôi</span>
                 </h2>
                 <br />
-                <p style={{textAlign: 'justify', lineHeight: '2em'}}>
+                <p style={{ textAlign: 'justify', lineHeight: '2em' }}>
                   CORE là đơn vị Tư vấn Xây dựng chuyên nghiệp, được phát
                   triển trên nền tảng những cá nhân xuất sắc từng giữ vai trò
-                  lãnh đạo chủ chốt tại các tập đoàn tư vấn quốc tế lớn. <br/><br/>Với
+                  lãnh đạo chủ chốt tại các tập đoàn tư vấn quốc tế lớn. <br /><br />Với
                   khát vọng trở thành đơn vị tư vấn chuyên nghiệp và được tin
                   cậy hàng đầu, CORE luôn đề cao việc kết tinh tri trức và
                   công nghệ hiện đại nhằm mang lại giá trị thiết thực, bền
@@ -140,7 +145,7 @@ const LandingPage = (props) => {
             )}
           >
             <Grid>
-              <Grid.Row style={{margin: '2em'}}>
+              <Grid.Row style={{ margin: '2em' }}>
                 <Grid.Column computer={4} mobile={16}>
                   <img
                     src="http://coreasiapm.com/wp-content/uploads/2014/07/doi-tac-11.jpg"
@@ -173,7 +178,7 @@ const LandingPage = (props) => {
             </Grid>
 
             <Grid>
-              <Grid.Row style={{margin: '2em'}}>
+              <Grid.Row style={{ margin: '2em' }}>
                 <Grid.Column computer={4} mobile={16}>
                   <img
                     src="http://coreasiapm.com/wp-content/uploads/2014/07/doi-tac-11.jpg"
@@ -206,7 +211,7 @@ const LandingPage = (props) => {
             </Grid>
 
             <Grid>
-              <Grid.Row style={{margin: '2em'}}>
+              <Grid.Row style={{ margin: '2em' }}>
                 <Grid.Column computer={4} mobile={16}>
                   <img
                     src="http://coreasiapm.com/wp-content/uploads/2014/07/doi-tac-11.jpg"

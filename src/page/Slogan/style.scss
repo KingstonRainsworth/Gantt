@@ -1,0 +1,25 @@
+#banner {
+    width: 100%;
+    position: relative;
+    img {
+        width: 100%;
+    }
+    .title-banner {
+        font-size: 26px;
+        font-weight: bold;
+        display: inline-block;
+        padding: 0 25px;
+        background: #000;
+        line-height: 60px;
+        opacity: .8;
+        filter: alpha(opacity=80);
+        position: absolute;
+        bottom: -30px;
+        left: 0px;
+        color: white;
+    }
+}
+#content-slogan {
+     color: #878787;
+     line-height: 2em;
+ }

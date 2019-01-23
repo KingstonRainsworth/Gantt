@@ -4,11 +4,16 @@ import {
     Grid
 } from "semantic-ui-react";
 import './style.scss';
+import { Helmet } from "react-helmet";
 
 class About extends Component {
     render() {
         return (
             <Fragment>
+                <Helmet>
+                    <meta charSet="utf-8" />
+                    <title>Giới thiệu</title>
+                </Helmet>
                 <section id="banner">
                     <img src="http://coreasiapm.com/wp-content/uploads/2016/05/BN-trang-trong1.jpg" />
                     <Container style={{ position: 'relative' }}>
@@ -42,17 +47,17 @@ class About extends Component {
                                     <h4>♣ Vũ Hoàng</h4>
                                 </td>
                                 <td data-label="Age" colSpan="13">
-                                Là CEO, thành viên sáng lập của CORE. Tốt nghiệp Thạc sĩ về quản lý chất lượng xây dựng 2005 tại Pháp (xếp hạng 1 của lớp). Hơn 10 năm kinh nghiệm, từng trải qua nhiều vị trí Giám đốc dự án, Giám đốc Chi nhánh, Phó Tổng Giám đốc của Apave Châu Á – Thái Bình Dương (Pháp).
+                                    Là CEO, thành viên sáng lập của CORE. Tốt nghiệp Thạc sĩ về quản lý chất lượng xây dựng 2005 tại Pháp (xếp hạng 1 của lớp). Hơn 10 năm kinh nghiệm, từng trải qua nhiều vị trí Giám đốc dự án, Giám đốc Chi nhánh, Phó Tổng Giám đốc của Apave Châu Á – Thái Bình Dương (Pháp).
                                 </td>
                             </tr>
                             <tr>
                                 <td data-label="Name" colSpan="3">
-                                <img src="http://coreasiapm.chiliweb.org/wp-content/uploads/2014/03/t%E1%BA%A3i-xu%E1%BB%91ng.jpg" />
+                                    <img src="http://coreasiapm.chiliweb.org/wp-content/uploads/2014/03/t%E1%BA%A3i-xu%E1%BB%91ng.jpg" />
                                     <h4>♣ Hoàng Vũ</h4>
                                 </td>
                                 <td data-label="Age" colSpan="13">
-                                Quốc tịch Úc. Là thành viên sáng lập, Phó Tổng Giám đốc của CORE. 39 năm kinh nghiệm trong lĩnh vực Kỹ thuật công trình và Thiết kế nền móng; Quản lý xây dựng và Quản lý dự án. Tốt nghiệp Thạc sỹ Kỹ thuật công trình tại Úc, và tham gia nhiều dự án xây dựng tại Úc và Việt Nam. Đặc biệt, từng nắm giữ các vị trí quản lý cấp cao của Bộ Xây dựng và các Công ty Xây dựng, Tư vấn quốc tế có uy tín như Transfield Construction, Permasteelisa, Meinhardt, Aurecon, Cofico.
-                                </td>   
+                                    Quốc tịch Úc. Là thành viên sáng lập, Phó Tổng Giám đốc của CORE. 39 năm kinh nghiệm trong lĩnh vực Kỹ thuật công trình và Thiết kế nền móng; Quản lý xây dựng và Quản lý dự án. Tốt nghiệp Thạc sỹ Kỹ thuật công trình tại Úc, và tham gia nhiều dự án xây dựng tại Úc và Việt Nam. Đặc biệt, từng nắm giữ các vị trí quản lý cấp cao của Bộ Xây dựng và các Công ty Xây dựng, Tư vấn quốc tế có uy tín như Transfield Construction, Permasteelisa, Meinhardt, Aurecon, Cofico.
+                                </td>
                             </tr>
                         </tbody>
                     </table>
