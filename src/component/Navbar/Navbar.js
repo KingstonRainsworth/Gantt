@@ -1,4 +1,5 @@
 import React, { Component, Fragment } from 'react';
+import { Link } from 'react-router-dom';
 import {
     Image
 } from "semantic-ui-react";
@@ -22,7 +23,7 @@ class Navbar extends Component {
 
     handleScroll (){
         const currentScrollY = window.scrollY;
-        if (currentScrollY > 300)
+        if (currentScrollY > 100)
             this.setState({ navbarShow: true });
         else
             this.setState({ navbarShow: false });
