@@ -37,34 +37,34 @@ class Navbar extends Component {
                     <div className="item-col1-header">
                         <ul>
                             <li>
-                                <a href="#" style={{ color: "black" }}>
+                                <a href="/" style={{ color: "black" }}>
                                     Trang chủ
               </a>
                             </li>
                             <li>
-                                <a href="#">Giới thiệu</a>
+                                <a href="/about">Giới thiệu</a>
                             </li>
                             <li>
-                                <a href="#">Dịch vụ</a>
+                                <a href="/service">Dịch vụ</a>
                             </li>
                             <li>
-                                <a href="#">Tin tức</a>
+                                <a href="/news">Tin tức</a>
                             </li>
                         </ul>
                     </div>
                     <div className="item-col2-header">
                         <ul>
                             <li>
-                                <a href="#">Vì sao chọn Đồng Nhân</a>
+                                <a href="/slogan">Vì sao chọn Đồng Nhân</a>
                             </li>
                             <li>
-                                <a href="#">Dự án</a>
+                                <a href="/project">Dự án</a>
                             </li>
                             <li>
-                                <a href="#">Tuyển dụng</a>
+                                <a href="/recruit">Tuyển dụng</a>
                             </li>
                             <li>
-                                <a href="#">Liên hệ</a>
+                                <a href="/contact">Liên hệ</a>
                             </li>
                         </ul>
                     </div>
@@ -86,14 +86,14 @@ class Navbar extends Component {
                     </div>
                     <div className="item-col1-col2-mobile-header">
                         <select style={{ width: "69vw" }}>
-                            <option value="home">Trang chủ</option>
-                            <option value="introduce">Giới thiệu</option>
-                            <option value="services">Dịch vụ</option>
-                            <option value="news">Tin tức</option>
-                            <option value="news">Vì sao chọn Đồng Nhân</option>
-                            <option value="news">Dự án</option>
-                            <option value="news">Tuyển dụng</option>
-                            <option value="news">Liên hệ</option>
+                            <option value="home" href="/">Trang chủ</option>
+                            <option value="introduce" href="/about">Giới thiệu</option>
+                            <option value="services" href="/service">Dịch vụ</option>
+                            <option value="news" href="/news">Tin tức</option>
+                            <option value="news" href="/slogan">Vì sao chọn Đồng Nhân</option>
+                            <option value="news" href="/project">Dự án</option>
+                            <option value="news" href="/recruit">Tuyển dụng</option>
+                            <option value="news" href="/contact">Liên hệ</option>
                         </select>
                     </div>
                 </header>
@@ -101,14 +101,14 @@ class Navbar extends Component {
                     <div className='ui container'>
                         <div className="ui grid">
                             <div className="eight column row">
-                                <div className="column">Trang chủ</div>
-                                <div className="column">Giới thiệu</div>
-                                <div className="column">Dịch vụ</div>
-                                <div className="column">Tin tức</div>
-                                <div className="column">Vì sao chọn ĐN</div>
-                                <div className="column">Dự án</div>
-                                <div className="column">Tuyển dụng</div>
-                                <div className="column">Liên hệ</div>
+                                <div className="column" ><a href="/">Trang chủ</a></div>    
+                                <div className="column"><a href="/about"></a>Giới thiệu</div>
+                                <div className="column" ><a href="/service"></a>Dịch vụ</div>
+                                <div className="column" ><a href="/news"></a>Tin tức</div>
+                                <div className="column" ><a href="/slogan"></a>Vì sao chọn ĐN</div>
+                                <div className="column" ><a href="/project"></a>Dự án</div>
+                                <div className="column" ><a href="/recruit"></a>Tuyển dụng</div>
+                                <div className="column" ><a href="/contact"></a>Liên hệ</div>
                             </div>
                         </div>
                     </div>

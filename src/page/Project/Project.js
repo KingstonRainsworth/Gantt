@@ -38,7 +38,7 @@ class Project extends Component {
                     </Container>
                 </section>
                 <Container style={{ margin: '7em 0' }}>
-                    <section className="project-slides">
+                    <section className="project-slides-page">
                         <Grid container>
                             {data.map((row, index) => (
                                 <Grid.Row key={index}>
