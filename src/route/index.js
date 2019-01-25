@@ -5,6 +5,7 @@ import Slogan from '../page/Slogan';
 import Project from '../page/Project';
 
 var indexRoutes = [
+  { path:'/project/:id', name: 'Details', component: Slogan },
   { path:'/project', name: 'Project', component: Project },
   { path:'/slogan', name: 'Slogan', component: Slogan },
   { path:'/service', name: 'Service', component: Service },
