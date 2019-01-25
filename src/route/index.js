@@ -4,6 +4,8 @@ import Service from '../page/Service';
 import Slogan from '../page/Slogan';
 import Project from '../page/Project';
 
+import PathComponent from './PathComponent'
+
 var indexRoutes = [
   { path:'/project/:id', name: 'Details', component: Slogan },
   { path:'/project', name: 'Project', component: Project },
