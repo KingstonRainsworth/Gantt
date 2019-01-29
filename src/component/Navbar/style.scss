@@ -8,6 +8,10 @@ $primary-color : #0065af;
     justify-content: space-between;
     padding: 25px 10px 25px 10px; 
     background-color: $primary-color;
+
+    .href-pointer {
+      cursor: pointer;
+    }
   
     .item-col1-header {
       padding-right: 35px;
