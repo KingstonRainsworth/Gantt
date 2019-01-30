@@ -47,6 +47,9 @@ $primary-color : #0065af;
     }
   
     .project-detail {
+      display: flex;
+      justify-content: center;
+      align-items: center;
       position: absolute;
       width: 100%;
       height: 100%;
@@ -56,7 +59,6 @@ $primary-color : #0065af;
       font-weight: 600;
       transition: 0.5s;
       h2 {
-        margin-top: 6rem;
         opacity: 1;
       }
     }
