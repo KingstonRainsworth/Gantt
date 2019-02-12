@@ -14,20 +14,22 @@ class App extends Component {
   render() {
     return (
       <Fragment>
-        <Navbar />
         <BrowserRouter>
           <Router history={hist}>
-            <Switch>
-              {indexRoutes.map((prop, key) => {
-                return (
-                  <Route
-                    path={prop.path}
-                    key={key}
-                    component={prop.component}
-                  />
-                );
-              })}
-            </Switch>
+            <Fragment>
+              <Navbar />
+                <Switch>
+                  {indexRoutes.map((prop, key) => {
+                    return (
+                      <Route
+                        path={prop.path}
+                        key={key}
+                        component={prop.component}
+                      />
+                    );
+                  })}
+                </Switch>
+            </Fragment>
           </Router>
         </BrowserRouter>
         <Footer />
