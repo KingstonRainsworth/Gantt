@@ -6,6 +6,7 @@ import indexRoutes from "./route/index.js";
 
 import Navbar from "./component/Navbar";
 import Footer from "./component/Footer";
+import PathComponent from './route/PathComponent'
 
 //CSS
 import "./style/styleIndex.scss";
@@ -13,25 +14,19 @@ import "./style/styleIndex.scss";
 class App extends Component {
   render() {
     return (
-      <Fragment>
-        <Navbar />
-        <BrowserRouter>
-          <Router history={hist}>
-            <Switch>
-              {indexRoutes.map((prop, key) => {
-                return (
-                  <Route
-                    path={prop.path}
-                    key={key}
-                    component={prop.component}
-                  />
-                );
-              })}
-            </Switch>
-          </Router>
-        </BrowserRouter>
-        <Footer />
-      </Fragment>
+      <Router history={hist}>
+        <Switch>
+          {indexRoutes.map((prop, key) => {
+            return (
+              <PathComponent
+                path={prop.path}
+                key={key}
+                component={prop.component}
+              />
+            );
+          })}
+        </Switch>
+      </Router>
     );
   }
 }
