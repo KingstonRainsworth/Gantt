@@ -15,7 +15,7 @@ const Footer = (props) => {
                         <Grid.Row columns={3}>
                             <Grid.Column computer={5} mobile={16}>
                                 <ul className="noneUlStyle" >
-                                    <li className='ui medium blue header'>Vì sao nên chọn Đồng Nhân</li>
+                                    <li className='ui medium red header'>Vì sao nên chọn Đồng Nhân</li>
                                     <li>Kết tinh tri thức và công nghệ hiện đại</li>
                                     <li>Mang đến dịch vụ tư vấn chất lượng, toàn diện</li>
                                     <li>Hoàn thành dự án an toàn, trong ngân sách với chất lượng và tiến độ tốt nhất</li>
@@ -28,7 +28,7 @@ const Footer = (props) => {
                             </Grid.Column>
                             <Grid.Column computer={5} mobile={16} >
                                 <ul className="noneUlStyle">
-                                    <li className='ui medium blue header'>Thông tin liên hệ</li>
+                                    <li className='ui medium red header'>Thông tin liên hệ</li>
                                     <li>CÔNG TY TNHH QUẢN LÝ DỰ ÁN CORE ASIA</li>
                                     <li>HCM: Tòa nhà Arirang, 131 Trần Huy Liệu, HCM</li>
                                     <li>Email: info@coreasiapm.com</li>
@@ -37,7 +37,7 @@ const Footer = (props) => {
                             </Grid.Column>
                             <Grid.Column computer={5} mobile={16}>
                                 <ul className="listNews">
-                                    <li className='ui medium blue header'>Bài viết mới</li>
+                                    <li className='ui medium red header'>Bài viết mới</li>
                                     <li>CORE TEAM – CÁC HOẠT ĐỘNG NỔI BẬT NỬA ĐẦU 2018</li>
                                     <li>TUYỂN DỤNG</li>
                                     <li>Lễ Khởi Công Dự Án Doubletree By Hilton Ha Long Bay Hotel & Condotel</li>
