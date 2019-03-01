@@ -41,7 +41,7 @@ const LandingPage = (props) => {
           />
         </Carousel>
       </section>
-      <Container>
+      <Container className="container-primary">
         <section className="caption-body">
           <p>Kết tinh tri thức và công nghệ hiện đại cho giá trị bền vững.</p>
         </section>
@@ -258,4 +258,3 @@ const LandingPage = (props) => {
 }
 
 export default LandingPage;
-

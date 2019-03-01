@@ -1,6 +1,8 @@
-$primary-color : #0065af;
+$primary-color : #f6f6f6;
+$secondary-color: #333333;
+$tetriary-color: #b90504;
 footer {
-    background-color: #000;
+    background-color: $secondary-color;
     padding-top: 50px;
     .noneUlStyle {
       color: white;
@@ -9,7 +11,7 @@ footer {
       li {
         margin: 2em 0 2em 0;
         h3 {
-          color: $primary-color  !important;
+          color: $tetriary-color  !important;
         }
       }
     }
@@ -18,38 +20,38 @@ footer {
       padding: 0;
       :nth-child(1) {
         list-style-type: none;
-      } 
+      }
       li {
         margin: 1em 0 1em 0;
         padding: 0 0 1em 0;
         border-bottom: 1px solid grey;
         h3 {
-          color: $primary-color  !important;
+          color: $tetriary-color  !important;
         }
       }
     }
-  
+
     .searchInput {
       width: 90% !important;
       height: 2.5em !important;
       background-color: #292929 !important;
       color: white !important;
       padding: 1em;
-      border-color: #292929 !important; 
+      border-color: #292929 !important;
     }
-  
-    
+
+
   }
-  
+
   .copyright {
-    background-color: $primary-color;
+    background-color: $tetriary-color;
     padding-top: 15px;
     padding-bottom: 15px;
     h4 {
-      color: #fff;
+      color: $secondary-color;
     }
   }
-  
+
   .button-scroll-to-top {
     position: fixed;
     bottom: 10px;
@@ -70,5 +72,5 @@ footer {
    .listNews{
       padding: 1em !important;
    }
-  
+
   }

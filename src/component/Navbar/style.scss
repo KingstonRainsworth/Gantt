@@ -1,4 +1,7 @@
-$primary-color : #0065af;
+$primary-color : #f6f6f6;
+$secondary-color: #333333;
+$tetriary-color: #b90504;
+
 
 //Header
 .navbar-header {
@@ -6,17 +9,16 @@ $primary-color : #0065af;
     align-items: center;
     flex-direction: row;
     justify-content: space-between;
-    padding: 25px 10px 25px 10px; 
-    background-color: $primary-color;
-
+    padding: 25px 10px 25px 10px;
+    background-color: $secondary-color;
     .href-pointer {
       cursor: pointer;
     }
-  
+
     .item-col1-header {
       padding-right: 35px;
       border-right: 1px solid white;
-  
+
       ul {
         list-style: none;
         margin: 0 !important;
@@ -24,16 +26,16 @@ $primary-color : #0065af;
         color: white;
         line-height: 1.5em;
         font-weight: 500;
-  
+
         li a {
-          color: white;
+          color: $primary-color;
         }
       }
     }
-    
+
     .item-col2-header {
       padding-left: 35px;
-  
+
       ul {
         list-style: none;
         margin: 0 !important;
@@ -41,32 +43,32 @@ $primary-color : #0065af;
         color: white;
         line-height: 1.5em;
         font-weight: 500;
-  
+
         li a {
-          color: white;
+          color: $primary-color;
         }
       }
     }
-    
+
     .item-col1-col2-mobile-header {
       display: none;
     }
-    
+
     .item-col3-header {
-      flex-grow: 2; 
+      flex-grow: 2;
       padding: 0px 0px 50px 100px;
-  
+
       img {
         padding: 5px;
         display: inline;
       }
     }
-    
+
     .item-col4-header {
       padding: 10px;
     }
   }
-  
+
   .navigation-wrapper{
     padding: 0 15% 0 15%;
     position: fixed;
@@ -74,20 +76,20 @@ $primary-color : #0065af;
     left: 0;
     right: 0;
     z-index: 9999;
-    background-color: #000;
-    color: white;
+    background-color: $secondary-color;
+    color: $primary-color;
     transition:1s;
     .column {
       padding: 1em;
       text-align: center;
       :hover {
         cursor: crosshair;
-        background-color: $primary-color;
+        background-color: $tetriary-color;
       }
     }
   }
 
-  
+
 
   @media only screen and (min-width: 1180px) {
     .navbar-header {
@@ -116,9 +118,8 @@ $primary-color : #0065af;
         }
       }
     }
-    .navigation-wrapper{ 
+    .navigation-wrapper{
       display: none;
     }
-  
+
   }
-  
