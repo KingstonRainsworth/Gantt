@@ -1,5 +1,5 @@
 import React, { Fragment } from 'react';
-import { Container, Grid, Icon, Menu, Header } from 'semantic-ui-react';
+import { Container, Grid, Icon, Divider, Header } from 'semantic-ui-react';
 //Carousel
 import Carousel from 'nuka-carousel';
 import { Helmet } from 'react-helmet';
@@ -41,15 +41,46 @@ const LandingPage = () => (
         <img className="img-content " src={Pic4} alt="banner" />
       </Carousel>
     </div>
+    <Divider horizontal> Khám phá </Divider>
     <Container>
-      <Menu secondary>
-        <Menu.Item>
-          <Header icon>
+      <Grid columns={4} padded centered textAlign="center">
+        <Grid.Column>
+          <Header as="h1">
             <Icon name={'id badge outline'} size="massive" />
-            1000+ Nhan Vien
+            <Header.Content className="stats-content">
+              <div>1000+</div>
+              <div> Nhân Viên </div>
+            </Header.Content>
           </Header>
-        </Menu.Item>
-      </Menu>
+        </Grid.Column>
+        <Grid.Column>
+          <Header as="h1">
+            <Icon name={'birthday cake'} size="massive" />
+            <Header.Content className="stats-content">
+              <div>20+</div>
+              <div> Năm </div>
+            </Header.Content>
+          </Header>
+        </Grid.Column>
+        <Grid.Column>
+          <Header as="h1">
+            <Icon name={'id badge outline'} size="massive" />
+            <Header.Content className="stats-content">
+              <div>50+</div>
+              <div> Dự án </div>
+            </Header.Content>
+          </Header>
+        </Grid.Column>
+        <Grid.Column>
+          <Header as="h1">
+            <Icon name={'globe'} size="massive" />
+            <Header.Content className="stats-content">
+              <div>10+</div>
+              <div> Vị trí </div>
+            </Header.Content>
+          </Header>
+        </Grid.Column>
+      </Grid>
       <section className="caption-body">
         <p>Kết tinh tri thức và công nghệ hiện đại cho giá trị bền vững.</p>
       </section>
