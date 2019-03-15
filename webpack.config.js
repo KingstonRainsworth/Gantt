@@ -4,14 +4,14 @@ const path = require('path');
 
 const htmlWebpackPlugin = new HtmlWebPackPlugin({
   template: './index.html',
-  filename: './index.html'
+  filename: './index.html',
 });
 
 module.exports = {
   entry: ['@babel/polyfill', './index.js'],
   output: {
     filename: 'bundle.js',
-    path: path.resolve(__dirname, 'public')
+    path: path.resolve(__dirname, 'public'),
   },
   context: path.resolve(__dirname, 'src'),
   devServer: {
@@ -21,8 +21,8 @@ module.exports = {
     compress: true,
     historyApiFallback: true,
     proxy: {
-      '/api': 'http://localhost:8080'
-    }
+      '/api': 'http://localhost:8080',
+    },
   },
   module: {
     rules: [
@@ -30,13 +30,13 @@ module.exports = {
         test: /\.js$/,
         exclude: /node_modules/,
         include: path.resolve(__dirname, 'src'),
-        use: ['babel-loader']
+        use: ['babel-loader'],
       },
       {
         test: /\.css$/,
         use: [
           {
-            loader: 'style-loader'
+            loader: 'style-loader',
           },
           {
             loader: 'css-loader',
@@ -44,24 +44,24 @@ module.exports = {
               importLoaders: 1,
               localIdentName: '[name]_[local]_[hash:base64]',
               sourceMap: true,
-              minimize: true
-            }
-          }
-        ]
+              minimize: true,
+            },
+          },
+        ],
       },
       {
         test: /\.scss$/,
         use: [
           {
-            loader: 'style-loader'
+            loader: 'style-loader',
           },
           {
-            loader: 'css-loader'
+            loader: 'css-loader',
           },
           {
-            loader: 'sass-loader'
-          }
-        ]
+            loader: 'sass-loader',
+          },
+        ],
       },
       {
         test: /\.(pdf|jpg|png|gif|svg|)$/,
@@ -70,20 +70,20 @@ module.exports = {
             loader: 'file-loader',
             options: {
               name: '[name].[ext]',
-            }
-          }
-        ]
+            },
+          },
+        ],
       },
       {
         test: /\.(ttf|eot|woff|woff2)$/,
         use: {
           loader: 'file-loader',
           options: {
-            name: 'fonts/[name].[ext]'
-          }
-        }
-      }
-    ]
+            name: 'fonts/[name].[ext]',
+          },
+        },
+      },
+    ],
   },
   optimization: {
     minimize: true,
@@ -122,12 +122,12 @@ module.exports = {
             // react-devtools that we're using a production build
             conditionals: true,
             dead_code: true,
-            evaluate: true
+            evaluate: true,
           },
-          mangle: true
-        }
-      })
-    ]
+          mangle: true,
+        },
+      }),
+    ],
   },
-  plugins: [htmlWebpackPlugin]
+  plugins: [htmlWebpackPlugin],
 };

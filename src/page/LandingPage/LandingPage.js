@@ -1,9 +1,13 @@
 import React, { Fragment } from 'react';
-import { Container, Grid } from 'semantic-ui-react';
+import { Container, Grid, Icon, Menu, Header } from 'semantic-ui-react';
 //Carousel
 import Carousel from 'nuka-carousel';
 import { Helmet } from 'react-helmet';
 import './style.scss';
+import Pic1 from '../../assets/001.jpg';
+import Pic2 from '../../assets/C.jpg';
+import Pic3 from '../../assets/D.jpg';
+import Pic4 from '../../assets/IMG_1123.jpg';
 
 const LandingPage = () => (
   <Fragment>
@@ -11,44 +15,41 @@ const LandingPage = () => (
       <meta charSet="utf-8" />
       <title>Đồng nhân Project</title>
     </Helmet>
-    <section id="slides">
+    <div className="slide-container">
       <Carousel
         swiping={true}
-        autoplay={true}
+        wrapAround={true}
         renderCenterLeftControls={({ previousSlide }) => (
-          <i
-            className="fas fa-chevron-left"
+          <Icon
+            name="caret left"
             onClick={previousSlide}
-            style={{ fontSize: '4vw' }}
+            style={{ fontSize: '4vw', color: '#d71921' }}
           />
         )}
         renderCenterRightControls={({ nextSlide }) => (
-          <i
-            className="fas fa-chevron-right"
+          <Icon
+            name="caret right"
+            color="white"
             onClick={nextSlide}
-            style={{ fontSize: '4vw' }}
+            style={{ fontSize: '4vw', color: '#d71921' }}
           />
         )}
       >
-        <img
-          src="http://coreasiapm.com/wp-content/uploads/2016/05/Banner1.jpg"
-          alt="banner"
-        />
-        <img
-          src="http://coreasiapm.com/wp-content/uploads/2016/05/Banner2.jpg"
-          alt="banner"
-        />
-        <img
-          src="http://coreasiapm.com/wp-content/uploads/2016/05/Banner3.jpg"
-          alt="banner"
-        />
-        <img
-          src="http://coreasiapm.com/wp-content/uploads/2016/05/Banner4.jpg"
-          alt="banner"
-        />
+        <img className="img-content " src={Pic1} alt="banner" />
+        <img className="img-content " src={Pic2} alt="banner" />
+        <img className="img-content " src={Pic3} alt="banner" />
+        <img className="img-content " src={Pic4} alt="banner" />
       </Carousel>
-    </section>
+    </div>
     <Container>
+      <Menu secondary>
+        <Menu.Item>
+          <Header icon>
+            <Icon name={'id badge outline'} size="massive" />
+            1000+ Nhan Vien
+          </Header>
+        </Menu.Item>
+      </Menu>
       <section className="caption-body">
         <p>Kết tinh tri thức và công nghệ hiện đại cho giá trị bền vững.</p>
       </section>

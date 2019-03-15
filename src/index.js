@@ -4,7 +4,8 @@ import { createBrowserHistory } from 'history';
 import { Router, Route, Switch, BrowserRouter } from 'react-router-dom';
 import indexRoutes from './route/index.js';
 
-import Navbar from './component/Navbar';
+import Header from './component/Header';
+import Navbar from './component/Navbar/index';
 import Footer from './component/Footer';
 
 //CSS
@@ -17,6 +18,7 @@ class App extends Component {
         <BrowserRouter>
           <Router history={hist}>
             <Fragment>
+              <Header />
               <Navbar />
               <Switch>
                 {indexRoutes.map((prop, key) => (
