@@ -8,7 +8,9 @@ import Pic1 from '../../assets/001.jpg';
 import Pic2 from '../../assets/C.jpg';
 import Pic3 from '../../assets/D.jpg';
 import Pic4 from '../../assets/IMG_1123.jpg';
-
+import Bvpq from '../../assets/BVPQ.jpg';
+import Ctf from '../../assets/Ctf.jpg';
+import Taf from '../../assets/v1.jpg';
 const LandingPage = () => (
   <Fragment>
     <Helmet>
@@ -99,52 +101,37 @@ const LandingPage = () => (
             <Grid.Column mobile={16} computer={4}>
               <div className="column-project-image">
                 <div className="project-detail">
-                  <h2>Khách sạn Sheraton Hạ Long</h2>
+                  <h2>Bệnh viện phụ sản quốc tế</h2>
                 </div>
-                <img
-                  className="project-image"
-                  src="http://coreasiapm.com/wp-content/uploads/2017/10/DOUBLE-TREE-HALONG2-400x485.jpg"
-                />
+                <img className="project-image" src={Bvpq} />
               </div>
             </Grid.Column>
             <Grid.Column mobile={16} computer={6}>
               <div className="column-project-image">
                 <div className="project-detail">
-                  <h2>Khách sạn Sheraton Hạ Long</h2>
+                  <h2>Toyota Tây Ninh</h2>
                 </div>
-                <img
-                  className="project-image"
-                  src="http://coreasiapm.com/wp-content/uploads/2016/04/PostHotel_Hinhdaidien-400x220.jpg"
-                />
+                <img className="project-image" src={Pic2} />
               </div>
               <div className="column-project-image">
                 <div className="project-detail">
-                  <h2>Khách sạn Sheraton Hạ Long</h2>
+                  <h2>Trung tâm lexus Sài Gòn</h2>
                 </div>
-                <img
-                  className="project-image"
-                  src="http://coreasiapm.com/wp-content/uploads/2017/10/thiet-ke-tropicana-nha-trang-night-02-400x220.jpg"
-                />
+                <img className="project-image" src={Pic1} />
               </div>
             </Grid.Column>
             <Grid.Column mobile={16} computer={6}>
               <div className="column-project-image">
                 <div className="project-detail">
-                  <h2>Khách sạn Sheraton Hạ Long</h2>
+                  <h2>Cần thơ Ford</h2>
                 </div>
-                <img
-                  className="project-image"
-                  src="http://coreasiapm.com/wp-content/uploads/2017/12/1-400x220.png"
-                />
+                <img className="project-image" src={Ctf} />
               </div>
               <div className="column-project-image">
                 <div className="project-detail">
-                  <h2>Khách sạn Sheraton Hạ Long</h2>
+                  <h2>Toyota Asta Fukushima</h2>
                 </div>
-                <img
-                  className="project-image"
-                  src="http://coreasiapm.com/wp-content/uploads/2018/06/sma-Copy-compressed-400x220.jpg"
-                />
+                <img className="project-image" src={Taf} />
               </div>
             </Grid.Column>
           </Grid.Row>
