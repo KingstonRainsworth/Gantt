@@ -41,7 +41,9 @@ const LandingPage = () => (
         <img className="img-content " src={Pic4} alt="banner" />
       </Carousel>
     </div>
-    <Divider horizontal> Khám phá </Divider>
+    <Divider horizontal>
+      <div className="divider-text"> Khám phá </div>
+    </Divider>
     <Container>
       <Grid columns={4} padded centered textAlign="center">
         <Grid.Column>
@@ -81,8 +83,10 @@ const LandingPage = () => (
           </Header>
         </Grid.Column>
       </Grid>
-      <section className="caption-body">
-        <p>Kết tinh tri thức và công nghệ hiện đại cho giá trị bền vững.</p>
+      <section style={{ margin: '50px 0 50px 0' }}>
+        <h2 className="text-divider">
+          <span>Dịch vụ</span>
+        </h2>
       </section>
       <section style={{ margin: '50px 0 50px 0' }}>
         <h2 className="text-divider">
@@ -142,33 +146,6 @@ const LandingPage = () => (
                   src="http://coreasiapm.com/wp-content/uploads/2018/06/sma-Copy-compressed-400x220.jpg"
                 />
               </div>
-            </Grid.Column>
-          </Grid.Row>
-        </Grid>
-      </section>
-      <section>
-        <Grid>
-          <Grid.Row columns={2}>
-            <Grid.Column computer={8} mobile={16}>
-              <h2 className="text-divider">
-                <span>Về chúng tôi</span>
-              </h2>
-              <br />
-              <p style={{ textAlign: 'justify', lineHeight: '2em' }}>
-                CORE là đơn vị Tư vấn Xây dựng chuyên nghiệp, được phát triển
-                trên nền tảng những cá nhân xuất sắc từng giữ vai trò lãnh đạo
-                chủ chốt tại các tập đoàn tư vấn quốc tế lớn. <br />
-                <br />
-                Với khát vọng trở thành đơn vị tư vấn chuyên nghiệp và được tin
-                cậy hàng đầu, CORE luôn đề cao việc kết tinh tri trức và công
-                nghệ hiện đại nhằm mang lại giá trị thiết thực, bền vững cho Quý
-                chủ đầu tư và các bên tham gia dự án.
-              </p>
-            </Grid.Column>
-            <Grid.Column computer={8} mobile={16}>
-              <h2 className="text-divider">
-                <span>Đối tác nói về chúng tôi</span>
-              </h2>
             </Grid.Column>
           </Grid.Row>
         </Grid>
@@ -283,14 +260,6 @@ const LandingPage = () => (
             </Grid.Row>
           </Grid>
         </Carousel>
-      </section>
-      <section className="share-icons-container">
-        <a href="#" className="share-icon">
-          <i className="fas fa-envelope" />
-        </a>
-        <a href="#" className="share-icon">
-          <i className="fab fa-facebook" />
-        </a>
       </section>
     </Container>
   </Fragment>

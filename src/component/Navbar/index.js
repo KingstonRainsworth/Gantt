@@ -18,6 +18,9 @@ const Navbar = props => (
         <Menu.Item active={props.location.pathname === '/about'}>
           <Link to="/about">ABOUT US</Link>
         </Menu.Item>
+        <Menu.Item active={props.location.pathname === '/project'}>
+          <Link to="/project">PROJECT</Link>
+        </Menu.Item>
         <Menu.Item active={props.location.pathname === '/recruit'}>
           <Link to="/recruit">RECRUIT</Link>
         </Menu.Item>

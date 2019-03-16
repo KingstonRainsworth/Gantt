@@ -13,11 +13,11 @@ const HeaderMenu = () => (
       <Menu.Menu position="right">
         <Menu.Item>
           <Icon name="phone" />
-          +(84)-917372411
+          +(84)2822405416
         </Menu.Item>
         <Menu.Item>
           <Icon name="mail outline" />
-          support@gantt.com
+          info@gantt.vn
         </Menu.Item>
       </Menu.Menu>
     </Menu>

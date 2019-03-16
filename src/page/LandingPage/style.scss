@@ -1,4 +1,4 @@
-$primary-color : #0065af;
+$primary-color : #d71921;
 
 .slide-container {
   height: 100vh;
@@ -12,6 +12,9 @@ $primary-color : #0065af;
   object-fit: cover;
 }
 
+.divider-text {
+  color: $primary-color;
+}
 .stats-content {
   text-align: center;
 }

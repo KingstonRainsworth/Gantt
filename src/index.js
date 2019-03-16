@@ -29,10 +29,10 @@ class App extends Component {
                   />
                 ))}
               </Switch>
+              <Footer />
             </Fragment>
           </Router>
         </BrowserRouter>
-        <Footer />
       </Fragment>
     );
   }
