@@ -7,6 +7,9 @@ import Pic2 from '../../assets/C.jpg';
 import Bvpq from '../../assets/BVPQ.jpg';
 import Ctf from '../../assets/Ctf.jpg';
 import Taf from '../../assets/v1.jpg';
+import Rsbh from '../../assets/image032.png';
+import Ttdd from '../../assets/image040.png';
+import Rcp from '../../assets/image003.jpg';
 
 /* {url: '', title: ''} template*/
 
@@ -34,6 +37,18 @@ const data = [
       url: Taf,
       title: 'Toyota Asta Fukushima',
     },
+    {
+      url: Rcp,
+      title: 'Resort Crowne Plaza Phú Quốc Starbay',
+    },
+    {
+      url: Ttdd,
+      title: 'Tổ hợp du lịch Thung lũng Đại Dương',
+    },
+    {
+      url: Rsbh,
+      title: 'Resort Sol Beach House',
+    }
   ],
 ];
 
