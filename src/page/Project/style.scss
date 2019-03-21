@@ -1,4 +1,4 @@
-$primary-color : #0065af;
+$primary-color : #d71921;
 #banner {
     width: 100%;
     position: relative;
@@ -22,7 +22,7 @@ $primary-color : #0065af;
 }
 
 .project-slides-page {
-    
+
     .column-project-image {
       position: relative;
       display: flex;
@@ -36,7 +36,7 @@ $primary-color : #0065af;
             height: 255px;
         }
     }
-  
+
     .project-detail {
       position: absolute;
       width: 100%;
@@ -51,16 +51,16 @@ $primary-color : #0065af;
         opacity: 1;
       }
     }
-  
+
     .project-detail:hover {
       opacity: 0.8;
       background: $primary-color;
     }
-  
+
     .project-image {
       max-width: 100%;
       height: 100%;
       display: block;
     }
-  
+
   }
