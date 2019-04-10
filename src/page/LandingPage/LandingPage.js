@@ -47,41 +47,49 @@ const LandingPage = () => (
       <div className="divider-text"> Khám phá </div>
     </Divider>
     <Container>
-      <Grid columns={4} padded centered textAlign="center">
+      <Grid columns={4} padded centered textAlign="center" stackable>
         <Grid.Column>
           <Header as="h1">
-            <Icon name={'id badge outline'} size="massive" />
-            <Header.Content className="stats-content">
-              <div>1000+</div>
-              <div> Nhân Viên </div>
-            </Header.Content>
+            <div className="stats-container">
+              <Icon name={'id badge outline'} size="big" />
+              <Header.Content className="stats-content">
+                <div>1000+</div>
+                <div> Nhân Viên </div>
+              </Header.Content>
+            </div>
           </Header>
         </Grid.Column>
         <Grid.Column>
           <Header as="h1">
-            <Icon name={'birthday cake'} size="massive" />
-            <Header.Content className="stats-content">
-              <div>20+</div>
-              <div> Năm </div>
-            </Header.Content>
+            <div className="stats-container">
+              <Icon name={'birthday cake'} size="big" />
+              <Header.Content className="stats-content">
+                <div>20+</div>
+                <div> Năm </div>
+              </Header.Content>
+            </div>
           </Header>
         </Grid.Column>
         <Grid.Column>
           <Header as="h1">
-            <Icon name={'id badge outline'} size="massive" />
-            <Header.Content className="stats-content">
-              <div>50+</div>
-              <div> Dự án </div>
-            </Header.Content>
+            <div className="stats-container">
+              <Icon name={'id badge outline'} size="big" />
+              <Header.Content className="stats-content">
+                <div>50+</div>
+                <div> Dự án </div>
+              </Header.Content>
+            </div>
           </Header>
         </Grid.Column>
         <Grid.Column>
           <Header as="h1">
-            <Icon name={'globe'} size="massive" />
-            <Header.Content className="stats-content">
-              <div>10+</div>
-              <div> Vị trí </div>
-            </Header.Content>
+            <div className="stats-container">
+              <Icon name={'globe'} size="big" />
+              <Header.Content className="stats-content">
+                <div>10+</div>
+                <div> Vị trí </div>
+              </Header.Content>
+            </div>
           </Header>
         </Grid.Column>
       </Grid>
