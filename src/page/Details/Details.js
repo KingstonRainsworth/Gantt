@@ -13,12 +13,6 @@ const Detail = (props) => {
       <Helmet>
         <meta charSet="utf-8"/>
       </Helmet>
-      <section id="banner">
-          <img src="http://coreasiapm.com/wp-content/uploads/2016/05/BN-trang-trong1.jpg" />
-          <Container style={{ position: 'relative' }}>
-              <h1 className="title-banner">{props.project || "aaaa"}</h1>
-          </Container>
-      </section>
       <Container style={{ margin: "20px" }}>
         <Grid divided='vertically'>
           <Grid.Row columns={2}>
