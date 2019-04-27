@@ -60,7 +60,6 @@ $primary-color : #d71921;
   .text-divider:before{ content: " "; display: block; border-top: 1px solid #e3e3e3; border-bottom: 1px solid #f7f7f7;}
 
   .project-slides {
-    max-height: max-content;
     .column-project-image {
       position: relative;
       display: flex;
@@ -93,9 +92,8 @@ $primary-color : #d71921;
     }
 
     .project-image {
-      max-width: 100%;
+      width: 100%;
       height: 100%;
-      display: block;
     }
 
   }
